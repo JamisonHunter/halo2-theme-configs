@@ -1,10 +1,35 @@
 # Halo 2 Main Menu Theme Linux App Configs
 
-Dark navy and steel-blue colors inspired by the Halo 2 main menu, for a GNOME desktop on Arch Linux. Each section below is independent, so set up only the apps the laptop has. Every step copies a file into place or changes one setting. Nothing needs a special launcher or a client mod.
+Dark navy and steel-blue colors inspired by the Halo 2 main menu, for a GNOME desktop on Linux. Each section below is independent, so set up only the apps you use. Every step copies a file into place or changes one setting. Nothing needs a special launcher or a client mod.
 
-Run the commands from inside this folder (`cd halo2-theme`). Paths start with `~`, so they work for any username. Restart an app after changing it to see the new colors.
+## Getting started
 
-**Before you start:** if the laptop already has any of these config files, back them up first. Several steps overwrite a whole file, as noted in each section.
+```bash
+git clone https://github.com/JamisonHunter/halo2-theme-configs.git
+cd halo2-theme-configs
+```
+
+Run the commands in each section from inside this folder. Paths start with `~`, so they work for any username. Restart an app after changing it to see the new colors.
+
+**Requirements:** GNOME 47 or newer (for the accent color setting) and a terminal with true color support for the terminal apps. The package commands use `pacman` (Arch Linux). On other distros, install the same package with your package manager.
+
+**Before you start:** back up any of these config files you already have. Several steps overwrite a whole file, as noted in each section.
+
+## Contents
+
+1. [GNOME desktop](#1-gnome-desktop)
+2. [Ghostty](#2-ghostty)
+3. [VS Code / Code - OSS](#3-vs-code--code---oss)
+4. [Arduino IDE 2](#4-arduino-ide-2)
+5. [GNOME Text Editor](#5-gnome-text-editor-syntax-colors)
+6. [Neovim and Vim](#6-neovim-and-vim)
+7. [cava](#7-cava-audio-visualizer)
+8. [spotify_player](#8-spotify_player-terminal-spotify-client)
+9. [nano](#9-nano)
+10. [fzf](#10-fzf)
+11. [lsd](#11-lsd-ls-replacement)
+12. [fastfetch](#12-fastfetch)
+13. [mpv](#13-mpv-on-screen-display-only)
 
 ## Palette
 
@@ -126,7 +151,7 @@ You can also choose **Halo 2 Menu** from the scheme list in Text Editor's settin
 ---
 
 ## 6. Neovim and Vim
-**Overwrites:** `~/.config/nvim/init.lua` and `~/.vimrc`. If you already have either one, don't copy it. Add the `colorscheme halo2` and `termguicolors` lines from this folder's copy to your own file instead.
+**Overwrites:** `~/.config/nvim/init.lua` and `~/.vimrc`. If you already have either one, don't copy it. Add the `colorscheme halo2` and `termguicolors` lines from this repo's copy to your own file instead.
 ```bash
 # Neovim
 mkdir -p ~/.config/nvim/colors
@@ -234,3 +259,7 @@ gsettings reset org.gnome.desktop.interface accent-color
 gsettings reset org.gnome.TextEditor style-scheme
 ```
 Then remove or change the `theme` lines you edited in each app's config.
+
+---
+
+*Fan-made project. Not affiliated with or endorsed by Microsoft, Xbox Game Studios, Halo Studios or Bungie. Halo is a trademark of Microsoft Corporation.*

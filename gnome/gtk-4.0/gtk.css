@@ -1,0 +1,28 @@
+/* Halo 2 main menu palette (libadwaita) — delete this file to revert */
+:root {
+  --accent-bg-color: #2f6fb8;
+  --accent-fg-color: #e6f3ff;
+  --accent-color: #7cc4ff;
+  --window-bg-color: #060b16;
+  --window-fg-color: #c4ddf7;
+  --view-bg-color: #08101d;
+  --view-fg-color: #c4ddf7;
+  --headerbar-bg-color: #04080f;
+  --headerbar-fg-color: #c4ddf7;
+  --headerbar-backdrop-color: #060b16;
+  --sidebar-bg-color: #04080f;
+  --sidebar-fg-color: #a9c4e2;
+  --sidebar-backdrop-color: #060b16;
+  --secondary-sidebar-bg-color: #070d19;
+  --card-bg-color: rgba(63, 127, 204, 0.08);
+  --card-fg-color: #c4ddf7;
+  --dialog-bg-color: #0a1322;
+  --dialog-fg-color: #c4ddf7;
+  --popover-bg-color: #0a1322;
+  --popover-fg-color: #c4ddf7;
+  --thumbnail-bg-color: #0a1322;
+  --border-color: rgba(124, 196, 255, 0.18);
+  --destructive-bg-color: #b0484e;
+  --success-bg-color: #3f9a70;
+  --warning-bg-color: #b08a3c;
+}

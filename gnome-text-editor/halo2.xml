@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme id="halo2" name="Halo 2 Menu" version="1.0">
+  <author>jamison</author>
+  <description>Dark navy and steel-blue inspired by the Halo 2 main menu</description>
+  <metadata><property name="variant">dark</property></metadata>
+
+  <color name="bg" value="#060b16"/>
+  <color name="bg2" value="#0a1322"/>
+  <color name="line" value="#0d1a2e"/>
+  <color name="sel" value="#1d3d66"/>
+  <color name="fg" value="#c4ddf7"/>
+  <color name="bright" value="#e6f3ff"/>
+  <color name="accent" value="#7cc4ff"/>
+  <color name="keyword" value="#6fb3ff"/>
+  <color name="dim" value="#3a5273"/>
+  <color name="comment" value="#4f6a8f"/>
+  <color name="string" value="#86def2"/>
+  <color name="gold" value="#d4b066"/>
+  <color name="violet" value="#b1a3f0"/>
+  <color name="op" value="#8fb4dc"/>
+  <color name="red" value="#e07a7f"/>
+  <color name="green" value="#82d6ad"/>
+
+  <style name="text" foreground="fg" background="bg"/>
+  <style name="selection" foreground="bright" background="sel"/>
+  <style name="cursor" foreground="accent"/>
+  <style name="current-line" background="line"/>
+  <style name="line-numbers" foreground="dim" background="bg"/>
+  <style name="current-line-number" foreground="accent" background="line"/>
+  <style name="right-margin" foreground="#1b3354" background="bg2"/>
+  <style name="bracket-match" foreground="bright" background="#24578f" bold="true"/>
+  <style name="bracket-mismatch" foreground="bright" background="#c75a5f"/>
+  <style name="search-match" foreground="bg" background="gold"/>
+  <style name="draw-spaces" foreground="#1b3354"/>
+  <style name="background-pattern" background="bg2"/>
+
+  <style name="def:comment" foreground="comment" italic="true"/>
+  <style name="def:shebang" foreground="comment" bold="true"/>
+  <style name="def:doc-comment-element" foreground="gold"/>
+  <style name="def:string" foreground="string"/>
+  <style name="def:special-char" foreground="#9fcfff"/>
+  <style name="def:constant" foreground="gold"/>
+  <style name="def:number" foreground="gold"/>
+  <style name="def:boolean" foreground="gold"/>
+  <style name="def:keyword" foreground="keyword"/>
+  <style name="def:statement" foreground="keyword"/>
+  <style name="def:builtin" foreground="keyword"/>
+  <style name="def:operator" foreground="op"/>
+  <style name="def:identifier" foreground="fg"/>
+  <style name="def:function" foreground="bright" bold="true"/>
+  <style name="def:type" foreground="violet"/>
+  <style name="def:preprocessor" foreground="gold"/>
+  <style name="def:special-constant" foreground="#ecca85"/>
+  <style name="def:heading" foreground="accent" bold="true"/>
+  <style name="def:emphasis" italic="true"/>
+  <style name="def:strong-emphasis" foreground="bright" bold="true"/>
+  <style name="def:link-text" foreground="accent"/>
+  <style name="def:net-address" foreground="accent" underline="single"/>
+  <style name="def:inline-code" foreground="string"/>
+  <style name="def:insert" foreground="green"/>
+  <style name="def:delete" foreground="red"/>
+  <style name="def:error" foreground="red" bold="true"/>
+  <style name="def:warning" foreground="gold"/>
+  <style name="def:note" foreground="bg" background="gold" bold="true"/>
+  <style name="def:underlined" underline="single"/>
+</style-scheme>

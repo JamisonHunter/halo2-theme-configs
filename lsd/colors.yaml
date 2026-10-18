@@ -1,0 +1,39 @@
+# Halo 2 main menu palette
+user: "#7cc4ff"
+group: "#5d7799"
+permission:
+  read: "#82d6ad"
+  write: "#d4b066"
+  exec: "#e07a7f"
+  exec-sticky: "#b1a3f0"
+  no-access: "#3a5273"
+  octal: "#86def2"
+  acl: "#86def2"
+  context: "#86def2"
+date:
+  hour-old: "#e6f3ff"
+  day-old: "#9fcfff"
+  older: "#5d7799"
+size:
+  none: "#3a5273"
+  small: "#a9c4e2"
+  medium: "#7cc4ff"
+  large: "#d4b066"
+inode:
+  valid: "#7cc4ff"
+  invalid: "#e07a7f"
+links:
+  valid: "#86def2"
+  invalid: "#e07a7f"
+tree-edge: "#3a5273"
+git-status:
+  default: "#c4ddf7"
+  unmodified: "#5d7799"
+  ignored: "#3a5273"
+  new-in-index: "#82d6ad"
+  new-in-workdir: "#82d6ad"
+  typechange: "#d4b066"
+  deleted: "#e07a7f"
+  renamed: "#86def2"
+  modified: "#d4b066"
+  conflicted: "#e07a7f"

@@ -1,0 +1,21 @@
+// Halo 2 main menu colors; the modules list is fastfetch's default set
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "color": { "1": "#7cc4ff", "2": "#3f7fcc" }
+  },
+  "display": {
+    "color": {
+      "keys": "#7cc4ff",
+      "title": "#e6f3ff",
+      "separator": "#3a5273",
+      "output": "#c4ddf7"
+    }
+  },
+  "modules": [
+    "title", "separator", "os", "host", "kernel", "uptime", "packages", "shell",
+    "display", "de", "wm", "wmtheme", "theme", "icons", "font", "cursor",
+    "terminal", "terminalfont", "cpu", "gpu", "memory", "swap", "disk",
+    "localip", "battery", "poweradapter", "locale", "break", "colors"
+  ]
+}

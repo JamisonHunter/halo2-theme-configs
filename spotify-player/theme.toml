@@ -1,0 +1,36 @@
+[[themes]]
+name = "halo2"
+[themes.palette]
+background = "#060b16"
+foreground = "#c4ddf7"
+black = "#0b1424"
+red = "#c75a5f"
+green = "#5fb88f"
+yellow = "#d4b066"
+blue = "#3f7fcc"
+magenta = "#8f7fd6"
+cyan = "#58c2dc"
+white = "#a9c4e2"
+bright_black = "#33496b"
+bright_red = "#e07a7f"
+bright_green = "#82d6ad"
+bright_yellow = "#ecca85"
+bright_blue = "#6fb3ff"
+bright_magenta = "#b1a3f0"
+bright_cyan = "#86def2"
+bright_white = "#e6f3ff"
+[themes.component_style]
+block_title = { fg = "#7cc4ff", modifiers = ["Bold"] }
+border = { fg = "#1b3354" }
+playback_track = { fg = "#e6f3ff", modifiers = ["Bold"] }
+playback_artists = { fg = "#7cc4ff" }
+playback_album = { fg = "#a9c4e2" }
+playback_metadata = { fg = "#5d7799" }
+playback_progress_bar = { fg = "#7cc4ff", bg = "#13243f" }
+current_playing = { fg = "#7cc4ff", modifiers = ["Bold"] }
+page_desc = { fg = "#7cc4ff", modifiers = ["Bold"] }
+table_header = { fg = "#7cc4ff" }
+selection = { fg = "#e6f3ff", bg = "#1d3d66", modifiers = ["Bold"] }
+secondary_row = { bg = "#0a1322" }
+like = { fg = "#e07a7f" }
+lyrics_played = { fg = "#5d7799" }

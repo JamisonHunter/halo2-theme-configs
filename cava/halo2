@@ -1,0 +1,11 @@
+# Halo 2 main menu: deep navy at the base rising to bright steel-blue
+[color]
+gradient = 1
+gradient_color_1 = '#13243f'
+gradient_color_2 = '#1d3d66'
+gradient_color_3 = '#24578f'
+gradient_color_4 = '#3f7fcc'
+gradient_color_5 = '#6fb3ff'
+gradient_color_6 = '#7cc4ff'
+gradient_color_7 = '#9fcfff'
+gradient_color_8 = '#e6f3ff'

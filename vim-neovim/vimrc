@@ -1,0 +1,4 @@
+" Halo 2 main menu colors
+set termguicolors
+syntax on
+colorscheme halo2

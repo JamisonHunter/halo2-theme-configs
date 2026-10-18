@@ -1,0 +1,14 @@
+## Halo 2 main menu interface colors
+include "/usr/share/nano/*.nanorc"
+set titlecolor bold,#eff,#258
+set statuscolor #cdf,#123
+set errorcolor bold,#eff,#c56
+set spotlightcolor #013,#dc8
+set selectedcolor #eff,#246
+set stripecolor ,#123
+set scrollercolor #48c
+set numbercolor #357
+set keycolor bold,#7cf
+set functioncolor #8ac
+set promptcolor #eff,#258
+set minicolor #cdf,#123

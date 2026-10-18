@@ -1,0 +1,23 @@
+# Halo 2 main menu inspired palette
+background = #060b16
+foreground = #c4ddf7
+cursor-color = #7cc4ff
+cursor-text = #060b16
+selection-background = #1d3d66
+selection-foreground = #e6f3ff
+palette = 0=#0b1424
+palette = 1=#c75a5f
+palette = 2=#5fb88f
+palette = 3=#d4b066
+palette = 4=#3f7fcc
+palette = 5=#8f7fd6
+palette = 6=#58c2dc
+palette = 7=#a9c4e2
+palette = 8=#33496b
+palette = 9=#e07a7f
+palette = 10=#82d6ad
+palette = 11=#ecca85
+palette = 12=#6fb3ff
+palette = 13=#b1a3f0
+palette = 14=#86def2
+palette = 15=#e6f3ff

@@ -1,0 +1,22 @@
+{
+  "name": "halo2-menu-theme",
+  "displayName": "Halo 2 Menu",
+  "description": "Dark navy and steel-blue theme inspired by the Halo 2 main menu",
+  "version": "1.0.0",
+  "publisher": "jamison",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Halo 2 Menu",
+        "uiTheme": "vs-dark",
+        "path": "./themes/halo2-color-theme.json"
+      }
+    ]
+  }
+}

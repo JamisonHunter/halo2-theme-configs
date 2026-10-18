@@ -41,6 +41,8 @@ window, .background, dialog, messagedialog, assistant, notebook > stack {
   color: @h2_fg;
 }
 window.background, dialog.background, .background { background-color: @h2_bg; }
+/* Keep the Desktop Icons (DING) window transparent so the wallpaper shows through */
+window.desktopwindow, window.desktopwindow.background { background-color: transparent; }
 
 .view, textview text, iconview, treeview.view, list, row, flowbox, .content-view {
   background-color: @h2_view;

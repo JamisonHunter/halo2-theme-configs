@@ -26,3 +26,29 @@
   --success-bg-color: #3f9a70;
   --warning-bg-color: #b08a3c;
 }
+
+/* Same colors for libadwaita 1.5 and older (GNOME 46 / Ubuntu 24.04), which use named colors */
+@define-color accent_bg_color #2f6fb8;
+@define-color accent_fg_color #e6f3ff;
+@define-color accent_color #7cc4ff;
+@define-color window_bg_color #060b16;
+@define-color window_fg_color #c4ddf7;
+@define-color view_bg_color #08101d;
+@define-color view_fg_color #c4ddf7;
+@define-color headerbar_bg_color #04080f;
+@define-color headerbar_fg_color #c4ddf7;
+@define-color headerbar_backdrop_color #060b16;
+@define-color sidebar_bg_color #04080f;
+@define-color sidebar_fg_color #a9c4e2;
+@define-color sidebar_backdrop_color #060b16;
+@define-color secondary_sidebar_bg_color #070d19;
+@define-color card_bg_color rgba(63, 127, 204, 0.08);
+@define-color card_fg_color #c4ddf7;
+@define-color dialog_bg_color #0a1322;
+@define-color dialog_fg_color #c4ddf7;
+@define-color popover_bg_color #0a1322;
+@define-color popover_fg_color #c4ddf7;
+@define-color thumbnail_bg_color #0a1322;
+@define-color destructive_bg_color #b0484e;
+@define-color success_bg_color #3f9a70;
+@define-color warning_bg_color #b08a3c;

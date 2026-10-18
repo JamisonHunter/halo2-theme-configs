@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Halo 2 Menu",
+  "version": "1.0.0",
+  "description": "Dark navy and steel-blue colors inspired by the Halo 2 main menu",
+  "theme": {
+    "colors": {
+      "frame": [4, 8, 15],
+      "frame_inactive": [6, 11, 22],
+      "frame_incognito": [4, 8, 15],
+      "frame_incognito_inactive": [6, 11, 22],
+      "toolbar": [10, 19, 34],
+      "tab_text": [230, 243, 255],
+      "tab_background_text": [93, 119, 153],
+      "tab_background_text_inactive": [93, 119, 153],
+      "bookmark_text": [196, 221, 247],
+      "toolbar_text": [196, 221, 247],
+      "toolbar_button_icon": [124, 196, 255],
+      "omnibox_background": [6, 11, 22],
+      "omnibox_text": [196, 221, 247],
+      "ntp_background": [6, 11, 22],
+      "ntp_text": [196, 221, 247],
+      "ntp_link": [124, 196, 255],
+      "ntp_header": [27, 51, 84],
+      "button_background": [36, 87, 143]
+    },
+    "properties": {
+      "ntp_background_alignment": "bottom"
+    }
+  }
+}

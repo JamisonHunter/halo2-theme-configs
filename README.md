@@ -11,7 +11,7 @@ cd halo2-theme-configs
 
 Run the commands in each section from inside this folder. Paths start with `~`, so they work for any username. Restart an app after changing it to see the new colors.
 
-**Requirements:** GNOME 47 or newer (for the accent color setting) and a terminal with true color support for the terminal apps. The package commands use `pacman` (Arch Linux). On other distros, install the same package with your package manager.
+**Requirements:** GNOME 46 or newer and a terminal with true color support for the terminal apps. GNOME 46 (Ubuntu 24.04) needs a different accent color step, noted in section 1. The package commands use `pacman` (Arch Linux). On other distros, install the same package with your package manager (for example `sudo apt install` on Ubuntu).
 
 **Before you start:** back up any of these config files you already have. Several steps overwrite a whole file, as noted in each section.
 
@@ -30,6 +30,11 @@ Run the commands in each section from inside this folder. Paths start with `~`, 
 11. [lsd](#11-lsd-ls-replacement)
 12. [fastfetch](#12-fastfetch)
 13. [mpv](#13-mpv-on-screen-display-only)
+14. [Tilix](#14-tilix)
+15. [GNOME Terminal](#15-gnome-terminal)
+16. [neofetch](#16-neofetch)
+17. [Blender](#17-blender)
+18. [Brave / Chromium](#18-brave--chromium)
 
 ## Palette
 
@@ -82,10 +87,23 @@ gsettings set org.gnome.shell.extensions.user-theme name 'Halo2'
 ```
 On Wayland, log out and back in for the shell theme to load.
 
+On Ubuntu, the package is `sudo apt install gnome-shell-extensions`. Without root access, install **User Themes** for your GNOME version from [extensions.gnome.org](https://extensions.gnome.org/extension/19/user-themes/) instead, then log out and back in before running the `gsettings set` line.
+
 ### Dark mode and blue accent
 ```bash
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface accent-color 'blue'
+```
+GNOME 46 doesn't have the `accent-color` setting. On Ubuntu 24.04, pick the blue Yaru theme instead:
+```bash
+gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-blue-dark'
+```
+
+### Ubuntu Dock / Dash to Dock
+The dock draws its own background over the shell theme. Set it to the Halo 2 navy:
+```bash
+gsettings set org.gnome.shell.extensions.dash-to-dock custom-background-color true
+gsettings set org.gnome.shell.extensions.dash-to-dock background-color '#060b16'
 ```
 
 ### Wallpaper (optional)
@@ -178,6 +196,11 @@ theme = 'halo2'
 ```
 (Change the commented `; theme = 'none'` line to that.) If `~/.config/cava/config` doesn't exist yet, run cava once to create it.
 
+cava versions before 0.10 (Ubuntu 24.04 ships 0.7.4) don't support themes. Put the colors in the config directly instead. If your config already has a `[color]` section, paste the `gradient` lines from `cava/halo2` into it along with `gradient_count = 8`. If the config is empty or has no `[color]` section:
+```bash
+{ echo "[color]"; echo "gradient_count = 8"; grep '^gradient' cava/halo2; } >> ~/.config/cava/config
+```
+
 ---
 
 ## 8. spotify_player (terminal Spotify client)
@@ -240,8 +263,67 @@ This appends to any existing `mpv.conf` instead of replacing it.
 
 ---
 
+## 14. Tilix
+This script adds a new **Halo 2** profile and makes it the default. Your other profiles stay as they are, and running it again updates the same profile.
+```bash
+./tilix/halo2-profile.sh
+```
+Tilix's window and menus get their colors from the GTK3 files in section 1. New terminals open with the Halo 2 profile. To switch an open terminal, click its title and choose **Profiles → Halo 2**.
+
+To pick the colors yourself from Tilix's color scheme list instead, copy the scheme file:
+```bash
+mkdir -p ~/.config/tilix/schemes
+cp tilix/Halo2.json ~/.config/tilix/schemes/
+```
+Then open **Preferences → Profiles → (your profile) → Color** and choose **Halo 2 Menu**.
+
+---
+
+## 15. GNOME Terminal
+This script adds a new **Halo 2** profile and makes it the default. Your other profiles stay as they are.
+```bash
+./gnome-terminal/halo2-profile.sh
+```
+New windows use it. To switch an open one, use the menu: **Profile → Halo 2**.
+
+---
+
+## 16. neofetch
+Appends the color settings to your existing config, so nothing else changes. If you don't have a config yet, run `neofetch` once to create it.
+```bash
+cat neofetch/halo2.conf >> ~/.config/neofetch/config.conf
+```
+neofetch uses the terminal's 16 palette colors rather than hex codes, so it looks right with the Halo 2 Ghostty, Tilix or GNOME Terminal theme.
+
+---
+
+## 17. Blender
+Adds a **Halo2** theme preset. It was made with Blender 4.0. Change `4.0` in the path to your version (run `blender --version` to check).
+```bash
+mkdir -p ~/.config/blender/4.0/scripts/presets/interface_theme
+cp blender/Halo2.xml ~/.config/blender/4.0/scripts/presets/interface_theme/
+```
+Then open **Edit → Preferences → Themes**, choose **Halo2** from the preset menu at the top, and save your preferences.
+
+---
+
+## 18. Brave / Chromium
+A browser theme for Brave, and also Chromium and Google Chrome. The browser loads it from the folder you pick, so copy it somewhere it can stay:
+```bash
+mkdir -p ~/.local/share/halo2-brave-theme
+cp brave/halo2-theme/manifest.json ~/.local/share/halo2-brave-theme/
+```
+Then:
+1. Go to `brave://extensions` (or `chrome://extensions`).
+2. Turn on **Developer mode** in the top right corner.
+3. Click **Load unpacked** and choose `~/.local/share/halo2-brave-theme`. Press **Ctrl+H** in the file picker to show hidden folders like `.local`.
+
+To remove it, go to **Settings → Appearance** and click **Reset to default** next to the theme.
+
+---
+
 ## Apps that already match
-- **Terminal apps** like htop, `ls`, git and less get their colors from Ghostty.
+- **Terminal apps** like htop, `ls`, git and less get their colors from the terminal theme (Ghostty, Tilix or GNOME Terminal).
 - **GNOME apps** get theirs from the GTK files in section 1.
 
 ## Skipped on purpose
@@ -257,7 +339,10 @@ rm ~/.config/gtk-4.0/gtk.css ~/.config/gtk-3.0/gtk.css ~/.config/gtk-3.0/setting
 gsettings reset org.gnome.shell.extensions.user-theme name
 gsettings reset org.gnome.desktop.interface accent-color
 gsettings reset org.gnome.TextEditor style-scheme
+gsettings reset org.gnome.desktop.interface gtk-theme
+gsettings reset org.gnome.shell.extensions.dash-to-dock custom-background-color
 ```
+For Tilix and GNOME Terminal, choose a different default profile in Preferences and delete the **Halo 2** profile there.
 Then remove or change the `theme` lines you edited in each app's config.
 
 ---

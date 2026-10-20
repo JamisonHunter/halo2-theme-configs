@@ -1,0 +1,2 @@
+[pygments.styles]
+halo2 = pygments_halo2:Halo2Style

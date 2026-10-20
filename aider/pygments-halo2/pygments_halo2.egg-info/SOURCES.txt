@@ -1,0 +1,8 @@
+pyproject.toml
+pygments_halo2/__init__.py
+pygments_halo2.egg-info/PKG-INFO
+pygments_halo2.egg-info/SOURCES.txt
+pygments_halo2.egg-info/dependency_links.txt
+pygments_halo2.egg-info/entry_points.txt
+pygments_halo2.egg-info/requires.txt
+pygments_halo2.egg-info/top_level.txt

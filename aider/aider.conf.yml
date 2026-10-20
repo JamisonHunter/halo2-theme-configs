@@ -1,0 +1,11 @@
+# Halo 2 main menu colors for aider
+code-theme: halo2
+user-input-color: "#7cc4ff"
+assistant-output-color: "#c4ddf7"
+tool-output-color: "#5d7799"
+tool-error-color: "#e07a7f"
+tool-warning-color: "#d4b066"
+completion-menu-color: "#c4ddf7"
+completion-menu-bg-color: "#0a1322"
+completion-menu-current-color: "#e6f3ff"
+completion-menu-current-bg-color: "#1d3d66"

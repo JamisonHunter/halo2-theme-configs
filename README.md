@@ -35,6 +35,7 @@ Run the commands in each section from inside this folder. Paths start with `~`, 
 16. [neofetch](#16-neofetch)
 17. [Blender](#17-blender)
 18. [Brave / Chromium](#18-brave--chromium)
+19. [aider](#19-aider)
 
 ## Palette
 
@@ -325,6 +326,19 @@ Then:
 4. In Brave, go to `brave://settings/appearance` and set **Brave colors** to **Dark**.
 
 To remove it, go to **Settings → Appearance** and click **Reset to default** next to the theme.
+
+---
+
+## 19. aider
+aider's default code theme draws code blocks and edits on a white background. This adds a `halo2` Pygments style and sets aider's text colors. Install the style into aider's environment (this assumes you installed aider with `uv tool`; `--with` keeps it there through `uv tool upgrade`):
+```bash
+uv tool install --force --python 3.12 aider-chat --with pip --with ./aider/pygments-halo2
+```
+Then copy the config. This overwrites `~/.aider.conf.yml`, so if you already have one, add the lines from `aider/aider.conf.yml` to it instead:
+```bash
+cp aider/aider.conf.yml ~/.aider.conf.yml
+```
+Don't pass `--dark-mode` or `--light-mode`. Those flags replace these colors with aider's built-in ones.
 
 ---
 

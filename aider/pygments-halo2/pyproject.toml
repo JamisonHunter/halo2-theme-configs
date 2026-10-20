@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pygments-halo2"
+version = "1.0.0"
+description = "Halo 2 main menu Pygments style (dark navy and steel-blue)"
+dependencies = ["pygments"]
+
+[project.entry-points."pygments.styles"]
+halo2 = "pygments_halo2:Halo2Style"

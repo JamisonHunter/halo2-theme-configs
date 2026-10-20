@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: pygments-halo2
+Version: 1.0.0
+Summary: Halo 2 main menu Pygments style (dark navy and steel-blue)
+Requires-Dist: pygments

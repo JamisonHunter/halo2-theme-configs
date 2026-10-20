@@ -313,10 +313,16 @@ A browser theme for Brave, and also Chromium and Google Chrome. The browser load
 mkdir -p ~/.local/share/halo2-brave-theme
 cp brave/halo2-theme/manifest.json ~/.local/share/halo2-brave-theme/
 ```
+**Flatpak Brave** can't read `~/.local/share`. Copy the theme into Brave's own Flatpak folder instead:
+```bash
+mkdir -p ~/.var/app/com.brave.Browser/halo2-brave-theme
+cp brave/halo2-theme/manifest.json ~/.var/app/com.brave.Browser/halo2-brave-theme/
+```
 Then:
 1. Go to `brave://extensions` (or `chrome://extensions`).
 2. Turn on **Developer mode** in the top right corner.
-3. Click **Load unpacked** and choose `~/.local/share/halo2-brave-theme`. Press **Ctrl+H** in the file picker to show hidden folders like `.local`.
+3. Click **Load unpacked** and choose the folder you copied the theme to. Press **Ctrl+H** in the file picker to show hidden folders like `.local` and `.var`, or press **Ctrl+L** and type the path.
+4. In Brave, go to `brave://settings/appearance` and set **Brave colors** to **Dark**.
 
 To remove it, go to **Settings → Appearance** and click **Reset to default** next to the theme.
 

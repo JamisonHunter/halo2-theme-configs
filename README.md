@@ -342,16 +342,6 @@ Don't pass `--dark-mode` or `--light-mode`. Those flags replace these colors wit
 
 ---
 
-## Apps that already match
-- **Terminal apps** like htop, `ls`, git and less get their colors from the terminal theme (Ghostty, Tilix or GNOME Terminal).
-- **GNOME apps** get theirs from the GTK files in section 1.
-
-## Skipped on purpose
-- **Discord, Spotify, Steam:** need client mods.
-- **Mullvad Browser and Tor Browser:** customizing them makes you easier to fingerprint.
-- **OpenSCAD:** its Snap needs a custom launcher.
-- **Signal, PrusaSlicer and similar:** only offer built-in light/dark themes.
-
 ## Undoing it
 Delete the files you copied and reset the settings you changed. For example:
 ```bash
